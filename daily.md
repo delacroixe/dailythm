@@ -44,3 +44,21 @@
 ### 🎯 Uso real
 - Comprobar impacto si se filtran `passwd` + `shadow` (qué cuentas caen).
 - Probar patrones reales con `--single` y `--rules` (nombres, años, sufijos).
+
+---
+
+## 2026-01-08
+
+**Room: Cybersecurity 101 - John the Ripper, The Basics**  
+**Tema: Cracking Password Protected Zip Files**  
+
+### 🧠 Aprendido
+- Crackear zip/rar protegido con pass
+
+### 🛠️ Comando / concepto clave
+- zip2john secure.zip > secure.txt  
+- rar2john secure.zip > secure.txt  
+- ssh22jhon id_rsa > id_rsa_hash.txt
+
+### 🎯 Uso real
+- Conseguir contraseñas para zip/rar o paraphrase de claves ssh
