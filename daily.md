@@ -62,3 +62,19 @@
 
 ### 🎯 Uso real
 - Conseguir contraseñas para zip/rar o paraphrase de claves ssh
+
+---
+
+## 2026-01-09
+
+**Room: Moniker Link (CVE-2024-21413)**  
+**Tema: CVE, exploit, detection, remediation**  
+
+### 🧠 Aprendido
+- Links maliciosos
+
+### 🛠️ Comando / concepto clave
+- https://github.com/CMNatic/CVE-2024-21413/blob/main/exploit.py
+
+### 🎯 Uso real
+- Al enviar el enlace que apunta a al atacante, intenta logarse enviando el hash ntlm (to crack)
