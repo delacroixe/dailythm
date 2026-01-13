@@ -78,3 +78,28 @@
 
 ### 🎯 Uso real
 - Al enviar el enlace que apunta a al atacante, intenta logarse enviando el hash ntlm (to crack)
+
+---
+
+## 2026-01-12
+
+**Room:Metasploit: Introduction**  
+**Tema: Main Components of Metasploit**  
+
+### 🧠 Aprendido
+- **Auxiliary**: módulos de soporte (scanners, crawlers, fuzzers, DoS). No explotan, ayudan a reconocimiento y análisis
+- **Encoders**: codifican exploit y payload para evadir AV basado en firmas (limitado, AV puede hacer checks adicionales)
+- **Evasion**: módulos avanzados para evadir antivirus (AppLocker, Windows Defender, Process Herpaderping)
+- **Exploits**: código que usa vulnerabilidad en target. Organizados por SO (Windows, Linux, macOS, etc.)
+- **NOPs**: No OPeration (0x90 en Intel x86). Buffer para lograr tamaños consistentes de payload
+- **Payloads**: código que se ejecuta en target. 4 tipos:
+  - Adapters: envuelven single payloads (ej: Powershell adapter)
+  - Singles: autocontenidos (add user, launch notepad), no descargan componentes adicionales
+  - Stagers: establecen canal de conexión, descargan stage
+  - Stages: descargados por stager, permiten payloads más grandes
+- **Post**: módulos de post-explotación (escalada, persistencia, recolección de datos)
+- Diferencia single vs staged: single usa "_", staged usa "/" (ej: generic/shell_reverse_tcp vs windows/x64/shell/reverse_tcp)
+
+### 🛠️ Comando / concepto clave
+
+### 🎯 Uso real
